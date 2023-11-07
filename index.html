@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khudaverdi Shiralizade</title>
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+
+        <div class="container">
+            <img src="images/logo.png" class="logo" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfilo</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-text">
+            <p>Front-end Developer</p>
+            <h1>Hi I'm <span>Khudaverdi <br>Shiralizade</span></h1>
+        </div>
+    </header>
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am passionate about web standards and keep abreast of new developments in our industry. I
+                        always look for opportunities to improve my skills. I like to show off what I am working on and
+                        also learn from others. I have strong attention to detail and value the design of a product as
+                        much as I value the code. Skilled in HTML, CSS,SASS,SCSS Bootstrap, JavaScript, React Js. Strong
+                        engineering professional with a Bachelor's and Master's degree focused in Information and
+                        Management from Azerbaijan State University of Economics.</p>
+                    <div class="tab-titles ">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">
+                            Education
+                        </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>SASS</li>
+                            <li>SCSS</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>React JS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>10/2023-Current</span><br>Front-end Mentor at ATL Academy</li>
+                            <li><span>05/2023-08/2023</span><br>Front-end Developer at Sinaps LTD</li>
+                            <li><span>04/2018-05/2023</span><br>Customer representer at Kapital Bank</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>04/2023-10/2023</span><br>Front-end Devloping at ATL Academy</li>
+                            <li><span>09/2017-07/2019</span><br>Bachelor degree Managment at UNEC</li>
+                            <li><span>09/2013-07/2017</span><br>Master degree Economy at UNEC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
