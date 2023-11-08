@@ -9,88 +9,209 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@300;400;700&display=swap"
         rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Css -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header id="header">
 
-        <div class="container">
-            <img src="images/logo.png" class="logo" alt="logo">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfilo</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+
+    <section>
+        <div class="section__content">
+            <!-- Header -->
+            <article>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">
+                    <div id="header">
+                        <div class="container">
+                            <img src="images/logo.svg" class="logo" alt="logo">
+
+                            <nav>
+                                <ul id="sideMenu">
+                                    <li><a class="text-black" href="#header">Home</a></li>
+                                    <li><a class="text-black" href="#about">About</a></li>
+                                    <li><a class="text-black" href="#services">Services</a></li>
+                                    <li><a class="text-black" href="#portfolio">Portfilo</a></li>
+                                    <li><a class="text-black" href="#contact">Contact</a></li>
+                                    <i class="menuControl fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
+                                </ul>
+                                <i class="menuControl  fa-solid fa-bars" onclick="openMenu()"></i>
+                            </nav>
+                        </div>
+                        <div class="header-text text-black">
+                            <p>Front-end Developer</p>
+                            <h1>Hi I'm Khudaverdi <br><span>Shiralizade</span></h1>
+                        </div>
+
+                    </div>
+                </text>
+            </article>
         </div>
-        <div class="header-text">
-            <p>Front-end Developer</p>
-            <h1>Hi I'm <span>Khudaverdi <br>Shiralizade</span></h1>
-        </div>
-    </header>
-    <!-- About -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png" alt="user">
+    </section>
+    <section>
+        <div class="section__content minHeight">
+            <!-- About -->
+            <main id="about" class="text-black">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/user.png" alt="user">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>I am passionate about web standards and keep abreast of new developments in our industry.
+                                I
+                                always look for opportunities to improve my skills. I like to show off what I am working
+                                on and
+                                also learn from others. I have strong attention to detail and value the design of a
+                                product as
+                                much as I value the code. Skilled in HTML, CSS,SASS,SCSS Bootstrap, JavaScript, React
+                                Js. Strong
+                                engineering professional with a Bachelor's and Master's degree focused in Information
+                                and
+                                Management from Azerbaijan State University of Economics.</p>
+                            <div class="tab-titles ">
+                                <p class="tab-links active-link" onclick="opentab('skills')">
+                                    Skills
+                                </p>
+                                <p class="tab-links" onclick="opentab('experience')">
+                                    Experience
+                                </p>
+                                <p class="tab-links" onclick="opentab('education')">
+                                    Education
+                                </p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li>HTML5</li>
+                                    <li>CSS</li>
+                                    <li>SASS</li>
+                                    <li>SCSS</li>
+                                    <li>Bootstrap</li>
+                                    <li>JavaScript</li>
+                                    <li>React JS</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>10/2023-Current</span><br>Front-end Mentor at ATL Academy</li>
+                                    <li><span>05/2023-08/2023</span><br>Front-end Developer at Sinaps LTD</li>
+                                    <li><span>04/2018-05/2023</span><br>Customer representer at Kapital Bank</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>04/2023-10/2023</span><br>Front-end Devloping at ATL Academy</li>
+                                    <li><span>09/2017-07/2019</span><br>Bachelor degree Managment at UNEC</li>
+                                    <li><span>09/2013-07/2017</span><br>Master degree Economy at UNEC</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I am passionate about web standards and keep abreast of new developments in our industry. I
-                        always look for opportunities to improve my skills. I like to show off what I am working on and
-                        also learn from others. I have strong attention to detail and value the design of a product as
-                        much as I value the code. Skilled in HTML, CSS,SASS,SCSS Bootstrap, JavaScript, React Js. Strong
-                        engineering professional with a Bachelor's and Master's degree focused in Information and
-                        Management from Azerbaijan State University of Economics.</p>
-                    <div class="tab-titles ">
-                        <p class="tab-links active-link" onclick="opentab('skills')">
-                            Skills
-                        </p>
-                        <p class="tab-links" onclick="opentab('experience')">
-                            Experience
-                        </p>
-                        <p class="tab-links" onclick="opentab('education')">
-                            Education
-                        </p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS</li>
-                            <li>SASS</li>
-                            <li>SCSS</li>
-                            <li>Bootstrap</li>
-                            <li>JavaScript</li>
-                            <li>React JS</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>10/2023-Current</span><br>Front-end Mentor at ATL Academy</li>
-                            <li><span>05/2023-08/2023</span><br>Front-end Developer at Sinaps LTD</li>
-                            <li><span>04/2018-05/2023</span><br>Customer representer at Kapital Bank</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>04/2023-10/2023</span><br>Front-end Devloping at ATL Academy</li>
-                            <li><span>09/2017-07/2019</span><br>Bachelor degree Managment at UNEC</li>
-                            <li><span>09/2013-07/2017</span><br>Master degree Economy at UNEC</li>
-                        </ul>
-                    </div>
+            </main>
+        </div>
+    </section>
+    <!-- services -->
+    <section id="services" class="minHeight text-black">
+        <div class="section__content">
+            <h1 class="sub-title ">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web solutions</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur saepe nisi unde debitis vel
+                        odit!</p>
+                    <a class="text-black" href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>Responsive solutions</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur saepe nisi unde debitis vel
+                        odit!</p>
+                    <a class="text-black" href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-circle-question"></i>
+                    <h2>IT support</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur saepe nisi unde debitis vel
+                        odit!</p>
+                    <a class="text-black" href="#">learn more</a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Portfolio -->
+    <section id="portfolio " class="minHeight">
+        <div class="section__content newList">
+            <h1 class="sub-title text-black m-left">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="https://weather-app-navy-mu.vercel.app/" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work1">
+                    <div class="layer">
+                        <h3>Images Search App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="https://search-photo-app-one.vercel.app/" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
 
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work1">
+                    <div class="layer">
+                        <h3>Booking panel</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="https://booking-panel-one.vercel.app/" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-more">See more</button>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section__content">
+            <div class="row">
+                <div class="contact-left text-black">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-share-from-square"></i>xudaverdi.sh@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+994515159935</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a class="btn btn-download" href="images/CV - Khudaverdi Shiralizade.pdf" download="">Download
+                        Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input id="username" type="text" name="Name" placeholder="Your Name" required>
+                        <input id="email" required type="email" name="Email" placeholder="Your Email">
+                        <textarea id="textArea" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn-download" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
 
-
+        </div>
+    </section>
+    <footer class="section__content copyright minHeight"><i class="fa-regular fa-copyright"></i> Shiralizade Khudaverdi
+    </footer>
     <script src="script.js"></script>
 </body>
 
