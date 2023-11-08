@@ -36,8 +36,7 @@ section:nth-of-type(1) {
 section:nth-of-type(1) article {
     min-height: 100vh;
     animation: blow-out both ease-in, fade-in both ease-in;
-    animation-timeline: --section;
-    animation-range: exit-crossing 10% exit 0%, exit-crossing 10% exit-crossing 25%;
+
     transform-origin: 50% 50%;
     width: 100%;
     position: fixed;
@@ -143,8 +142,7 @@ nav ul li a:focus {
     opacity: 0;
     background: linear-gradient(to right, #f8b195, #fba337, #FF8C00);
     width: 422px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
     overflow: hidden;
     animation: shring-animation 2.2s steps(40, end) 2s forwards, blink .5s step-end infinite alternate;
 }
@@ -399,7 +397,7 @@ main {
     background: #bee0fa;
     font-size: 13px;
     font-weight: 400;
-    transition: background 0.5s, transform 0.5s;
+
 }
 
 .services-list div i {
@@ -511,7 +509,7 @@ main {
     padding: 14px 50px;
     text-decoration: none;
     color: #7FA2BB;
-    transition: background;
+
 }
 
 .btn:hover {
@@ -622,7 +620,7 @@ form .btn-download {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .header-text {
         margin-top: 100%;
         font-size: 16px;
@@ -705,7 +703,7 @@ form .btn-download {
 
 
 /*#region medium screen Responsive */
-@media only screen and (max-width: 1050px) {
+@media (max-width: 1050px) {
     #header {
         background-image: url(images/IMG_771-PhotoRoom.jpg);
     }
